@@ -1,26 +1,17 @@
-import '@src/Options.css';
-import { useStorage, withErrorBoundary, withSuspense } from '@extension/shared';
-import { exampleThemeStorage } from '@extension/storage';
-import { Button } from '@extension/ui';
+import { withErrorBoundary, withSuspense } from '@extension/shared';
 
 const Options = () => {
-  const theme = useStorage(exampleThemeStorage);
-  const isLight = theme === 'light';
-  const logo = isLight ? 'options/logo_horizontal.svg' : 'options/logo_horizontal_dark.svg';
-  const goGithubSite = () =>
-    chrome.tabs.create({ url: 'https://github.com/Jonghakseo/chrome-extension-boilerplate-react-vite' });
-
   return (
-    <div className={`App ${isLight ? 'bg-slate-50 text-gray-900' : 'bg-gray-800 text-gray-100'}`}>
-      <button onClick={goGithubSite}>
-        <img src={chrome.runtime.getURL(logo)} className="App-logo" alt="logo" />
-      </button>
-      <p>
-        Edit <code>pages/options/src/Options.tsx</code>
-      </p>
-      <Button className="mt-4" onClick={exampleThemeStorage.toggle} theme={theme}>
-        Toggle theme
-      </Button>
+    <div className="flex h-screen flex-col bg-gray-100">
+      <header className="mb-4 flex items-center justify-between bg-white p-8 px-16 shadow">
+        <h1 className="text-xl font-bold">TITLE</h1>
+      </header>
+
+      <div className="flex flex-1 overflow-hidden">
+        <nav className="w-72 p-4 pl-16 text-lg">LEFT</nav>
+
+        <main className="mr-16 flex-1 overflow-auto bg-white p-6 shadow">CENTER</main>
+      </div>
     </div>
   );
 };
