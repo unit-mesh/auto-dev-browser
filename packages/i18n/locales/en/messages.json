@@ -1,11 +1,11 @@
 {
   "extensionDescription": {
     "description": "Extension description",
-    "message": "Chrome extension boilerplate developed with Vite, React and Typescript"
+    "message": "AutoDev Browser is a chrome extension boilerplate"
   },
   "extensionName": {
     "description": "Extension name",
-    "message": "Chrome extension boilerplate"
+    "message": "AutoDev Browser"
   },
   "toggleTheme": {
     "message": "Toggle theme"
