@@ -33,7 +33,22 @@
   "dependencies": {
     "eslint-plugin-tailwindcss": "^3.17.4",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
+    "@iarna/toml": "^2.2.5",
+    "@langchain/community": "^0.0.32",
+    "@langchain/core": "^0.1.40",
+    "@langchain/openai": "^0.0.14",
+    "@monaco-editor/react": "^4.6.0",
+    "@shikijs/core": "^1.15.1",
+    "@shikijs/monaco": "^1.15.1",
+    "handlebars": "^4.7.8",
+    "highlight.js": "^11.9.0",
+    "monaco-editor": "^0.51.0",
+    "monaco-editor-core": "^0.51.0",
+    "shiki": "^1.15.1",
+    "smol-toml": "^1.1.4"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.270",
