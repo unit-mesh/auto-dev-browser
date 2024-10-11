@@ -25,8 +25,8 @@ export default function App() {
     setContentPanelVisible(true);
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const onBackgroundMessage = function (message: TabMessage, sender, sendResponse) {
+  // eslint-disable-next-line
+  const onBackgroundMessage = function (message: TabMessage, sender: any, sendResponse: any) {
     if (message.cmd === CommandType.ChatPopupDisplay) {
       if (contentPanelVisible) {
         setContentPanelVisible(false);
