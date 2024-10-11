@@ -7,6 +7,10 @@
     "description": "Extension name",
     "message": "AutoDev Browser"
   },
+  "extensionCommandChatPopupDisplay": {
+    "description": "Command to display the popup",
+    "message": "显示聊天弹窗"
+  },
   "toggleTheme": {
     "message": "Toggle theme"
   },
