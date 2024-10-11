@@ -1,7 +1,7 @@
-import { exampleThemeStorage } from '@extension/storage';
+import { themeStorage } from '@extension/storage';
 
 export async function toggleTheme() {
-  console.log('initial theme:', await exampleThemeStorage.get());
-  await exampleThemeStorage.toggle();
-  console.log('toggled theme:', await exampleThemeStorage.get());
+  console.log('initial theme:', await themeStorage.get());
+  await themeStorage.toggle();
+  console.log('toggled theme:', await themeStorage.get());
 }

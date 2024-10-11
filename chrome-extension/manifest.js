@@ -65,6 +65,18 @@ const manifest = deepmerge(
         matches: ['*://*/*'],
       },
     ],
+    content_security_policy: {
+      extension_pages: "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';",
+    },
+    commands: {
+      ChatPopupDisplay: {
+        suggested_key: {
+          default: 'Ctrl+K',
+          mac: 'Command+K',
+        },
+        description: '__MSG_extensionCommandChatPopupDisplay__',
+      },
+    },
   },
   !isFirefox && sidePanelConfig,
 );

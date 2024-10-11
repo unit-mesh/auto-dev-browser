@@ -2,8 +2,11 @@
   "extends": "@extension/tsconfig/app",
   "compilerOptions": {
     "baseUrl": ".",
+    "typeRoots": ["./src/global.d.ts", "node_modules/@types"],
     "paths": {
-      "@src/*": ["src/*"]
+      "@src/*": ["src/*"],
+      "virtual:reload-on-update-in-background-script": ["./src/global.d.ts"],
+      "virtual:reload-on-update-in-view": ["./src/global.d.ts"]
     }
   },
   "include": ["src", "utils", "vite.config.mts", "../node_modules/@types"]

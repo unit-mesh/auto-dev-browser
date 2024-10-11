@@ -1,10 +1,10 @@
 import '@src/Panel.css';
 import { useStorage, withErrorBoundary, withSuspense } from '@extension/shared';
-import { exampleThemeStorage } from '@extension/storage';
+import { themeStorage } from '@extension/storage';
 import type { ComponentPropsWithoutRef } from 'react';
 
 const Panel = () => {
-  const theme = useStorage(exampleThemeStorage);
+  const theme = useStorage(themeStorage);
   const isLight = theme === 'light';
   const logo = isLight ? 'devtools-panel/logo_horizontal.svg' : 'devtools-panel/logo_horizontal_dark.svg';
   const goGithubSite = () =>
@@ -26,7 +26,7 @@ const Panel = () => {
 };
 
 const ToggleButton = (props: ComponentPropsWithoutRef<'button'>) => {
-  const theme = useStorage(exampleThemeStorage);
+  const theme = useStorage(themeStorage);
   return (
     <button
       className={
@@ -35,7 +35,7 @@ const ToggleButton = (props: ComponentPropsWithoutRef<'button'>) => {
         'font-bold mt-4 py-1 px-4 rounded shadow hover:scale-105 ' +
         (theme === 'light' ? 'bg-white text-black' : 'bg-black text-white')
       }
-      onClick={exampleThemeStorage.toggle}>
+      onClick={themeStorage.toggle}>
       {props.children}
     </button>
   );

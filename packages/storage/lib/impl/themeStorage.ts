@@ -14,7 +14,7 @@ const storage = createStorage<Theme>('theme-storage-key', 'light', {
 });
 
 // You can extend it with your own methods
-export const exampleThemeStorage: ThemeStorage = {
+export const themeStorage: ThemeStorage = {
   ...storage,
   toggle: async () => {
     await storage.set(currentTheme => {
