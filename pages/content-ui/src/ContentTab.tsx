@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 import { Tabs, Form, Input, Button, message, Space } from 'antd';
 import { RobotOutlined, ToolOutlined, SettingOutlined, PlayCircleOutlined, EditOutlined } from '@ant-design/icons';
 
-export default function EnhancedAutoTestUI() {
+// on close props
+export interface ContentTabProps {
+  onClose: () => void;
+}
+
+export default function ContentTab({ onClose }: ContentTabProps) {
   const [form] = Form.useForm();
   const [isCapturing, setIsCapturing] = useState(false);
 
@@ -40,6 +45,21 @@ export default function EnhancedAutoTestUI() {
   const items = [
     {
       key: '1',
+      label: (
+        <span className="flex items-center">
+          <ToolOutlined className="mr-1" />
+          常用功能
+        </span>
+      ),
+      children: (
+        <div className="rounded-lg bg-white p-2 shadow-sm">
+          <h3 className="mb-2 font-medium">Chat</h3>
+          <p className="text-sm">This is a placeholder for Function 2 content. Add your specific functionality here.</p>
+        </div>
+      ),
+    },
+    {
+      key: '2',
       label: (
         <span className="flex items-center">
           <RobotOutlined className="mr-1" />
@@ -93,26 +113,11 @@ export default function EnhancedAutoTestUI() {
       ),
     },
     {
-      key: '2',
-      label: (
-        <span className="flex items-center">
-          <ToolOutlined className="mr-1" />
-          Function 2
-        </span>
-      ),
-      children: (
-        <div className="p-2 bg-white rounded-lg shadow-sm">
-          <h3 className="font-medium mb-2">Function 2</h3>
-          <p className="text-sm">This is a placeholder for Function 2 content. Add your specific functionality here.</p>
-        </div>
-      ),
-    },
-    {
       key: '3',
       label: (
         <span className="flex items-center">
           <SettingOutlined className="mr-1" />
-          Function 3
+          知识挖掘
         </span>
       ),
       children: (
@@ -125,7 +130,13 @@ export default function EnhancedAutoTestUI() {
   ];
 
   return (
-    <div className="p-2 bg-gray-100 max-w-md mx-auto">
+    <div
+      className="p-2 bg-gray-100 max-w-md mx-auto"
+      onKeyDown={e => {
+        if (e.key === 'Escape') {
+          onClose();
+        }
+      }}>
       <Tabs defaultActiveKey="1" type="card" items={items} className="mb-2" />
     </div>
   );

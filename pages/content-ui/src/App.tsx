@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ContentTab from './ContentTab';
 
 export enum CommandType {
@@ -51,7 +51,7 @@ export default function App() {
       {contentPanelVisible && (
         <div className={'fixed right-0 top-0'}>
           <div className="flex items-center justify-between gap-2 rounded bg-blue-100 px-2 py-1">
-            <ContentTab />
+            <ContentTab onClose={() => setContentPanelVisible(false)} />
           </div>
         </div>
       )}

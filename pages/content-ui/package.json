@@ -23,6 +23,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@ant-design/cssinjs": "^1.21.1",
     "@ant-design/icons": "^5.5.1",
     "@extension/shared": "workspace:*",
     "@extension/storage": "workspace:*",

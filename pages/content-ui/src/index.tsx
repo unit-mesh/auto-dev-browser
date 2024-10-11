@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import App from '@src/App';
 import tailwindcssOutput from '../dist/tailwind-output.css?inline';
+import { StyleProvider } from '@ant-design/cssinjs';
 
 const root = document.createElement('div');
 root.id = 'autodev-chore-content-view-root';
@@ -30,4 +31,8 @@ if (navigator.userAgent.includes('Firefox')) {
 }
 
 shadowRoot.appendChild(rootIntoShadow);
-createRoot(rootIntoShadow).render(<App />);
+createRoot(rootIntoShadow).render(
+  <StyleProvider container={shadowRoot}>
+    <App />
+  </StyleProvider>,
+);
