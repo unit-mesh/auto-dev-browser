@@ -50,7 +50,7 @@ export default function App() {
     <>
       {contentPanelVisible && (
         <div className={'fixed right-0 top-0'}>
-          <div className="flex items-center justify-between gap-2 rounded bg-blue-100 px-2 py-1">
+          <div className="flex items-center justify-between shadow mr-4 mt-4 rounded">
             <ContentTab onClose={() => setContentPanelVisible(false)} />
           </div>
         </div>

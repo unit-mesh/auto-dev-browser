@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { Tabs, Form, Input, Button, message, Space } from 'antd';
-import { RobotOutlined, ToolOutlined, SettingOutlined, PlayCircleOutlined, EditOutlined } from '@ant-design/icons';
+import {
+  RobotOutlined,
+  ToolOutlined,
+  SettingOutlined,
+  PlayCircleOutlined,
+  EditOutlined,
+  CloseOutlined,
+} from '@ant-design/icons';
 import type { eventWithTime } from 'rrweb';
 import { record } from 'rrweb';
 import { listenerHandler } from '@rrweb/types';
@@ -142,16 +149,15 @@ export default function ContentTab({ onClose }: ContentTabProps) {
     },
   ];
 
-  // eslint-disable-next-line jsx-a11y/no-static-element-interactions
   return (
-    <div
-      className="p-2 bg-gray-100 max-w-md mx-auto"
-      onKeyDown={e => {
-        if (e.key === 'Escape') {
-          onClose();
-        }
-      }}>
-      <Tabs defaultActiveKey="1" type="card" items={items} className="mb-2" />
+    <div className="p-2 bg-gray-100 max-w-md mx-auto">
+      <Tabs
+        defaultActiveKey="1"
+        type="card"
+        items={items}
+        tabBarExtraContent={<CloseOutlined onClick={onClose} style={{ cursor: 'pointer' }} />}
+        className="mb-2"
+      />
     </div>
   );
 }
