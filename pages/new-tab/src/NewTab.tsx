@@ -8,7 +8,6 @@ import { t } from '@extension/i18n';
 const NewTab = () => {
   const theme = useStorage(themeStorage);
   const isLight = theme === 'light';
-  const logo = isLight ? 'new-tab/logo_horizontal.svg' : 'new-tab/logo_horizontal_dark.svg';
 
   console.log(t('hello', 'World'));
   return (

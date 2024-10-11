@@ -6,7 +6,6 @@ import type { ComponentPropsWithoutRef } from 'react';
 const Panel = () => {
   const theme = useStorage(themeStorage);
   const isLight = theme === 'light';
-  const logo = isLight ? 'devtools-panel/logo_horizontal.svg' : 'devtools-panel/logo_horizontal_dark.svg';
 
   return (
     <div className={`App ${isLight ? 'bg-slate-50' : 'bg-gray-800'}`}>
