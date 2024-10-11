@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Button } from '@extension/ui';
-import { useStorage } from '@extension/shared';
-import { themeStorage } from '@extension/storage';
+import ContentTab from './ContentTab';
 
 export enum CommandType {
   ChatPopupDisplay,
@@ -17,7 +15,6 @@ export interface TabMessage {
 }
 
 export default function App() {
-  const theme = useStorage(themeStorage);
   const [contentPanelVisible, setContentPanelVisible] = useState<boolean>(false);
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -54,12 +51,7 @@ export default function App() {
       {contentPanelVisible && (
         <div className={'fixed right-0 top-0'}>
           <div className="flex items-center justify-between gap-2 rounded bg-blue-100 px-2 py-1">
-            <div className="flex gap-1 text-blue-500">
-              Edit <strong className="text-blue-700">pages/content-ui/src/app.tsx</strong> and save to reload.
-            </div>
-            <Button theme={theme} onClick={themeStorage.toggle}>
-              Capture
-            </Button>
+            <ContentTab />
           </div>
         </div>
       )}

@@ -1,6 +1,7 @@
 import { resolve } from 'node:path';
 import { makeEntryPointPlugin } from '@extension/hmr';
 import { isDev, withPageConfig } from '@extension/vite-config';
+import postcss from 'rollup-plugin-postcss';
 
 const rootDir = resolve(__dirname);
 const srcDir = resolve(rootDir, 'src');
@@ -11,7 +12,12 @@ export default withPageConfig({
       '@src': srcDir,
     },
   },
-  plugins: [isDev && makeEntryPointPlugin()],
+  plugins: [
+    isDev && makeEntryPointPlugin(),
+    postcss({
+      extensions: ['.css'],
+    }),
+  ],
   publicDir: resolve(rootDir, 'public'),
   build: {
     lib: {

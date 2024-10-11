@@ -23,14 +23,17 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.5.1",
     "@extension/shared": "workspace:*",
     "@extension/storage": "workspace:*",
-    "@extension/ui": "workspace:*"
+    "@extension/ui": "workspace:*",
+    "antd": "^5.21.3",
+    "rollup-plugin-postcss": "^4.0.2"
   },
   "devDependencies": {
+    "@extension/hmr": "workspace:*",
     "@extension/tailwindcss-config": "workspace:*",
     "@extension/tsconfig": "workspace:*",
-    "@extension/hmr": "workspace:*",
     "@extension/vite-config": "workspace:*",
     "concurrently": "^9.0.1",
     "cross-env": "^7.0.3"
