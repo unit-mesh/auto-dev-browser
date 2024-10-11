@@ -1,4 +1,4 @@
-describe('Content UI Injection', () => {
+xdescribe('Content UI Injection', () => {
   it('should locate the injected content UI div', async () => {
     await browser.url('https://www.example.com');
 

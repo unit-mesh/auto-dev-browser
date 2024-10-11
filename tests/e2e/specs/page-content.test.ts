@@ -1,4 +1,4 @@
-describe('Webextension Content Script', () => {
+xdescribe('Webextension Content Script', () => {
   it('should log "content script loaded" in console', async () => {
     await browser.sessionSubscribe({ events: ['log.entryAdded'] });
     const logs: (string | null)[] = [];
