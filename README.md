@@ -6,9 +6,11 @@
 Roadmap:
 
 - AI Editor for Elements
-- Webview capture (Auto) for Testing ?
 - AI assistant development ? with code context ?
     - Capture code and auto generate
+    - Generate code base on webpage
+    - Webview capture (Auto) for Testing ?
+- Knowledge Mining
 
 ## LICENSE
 
