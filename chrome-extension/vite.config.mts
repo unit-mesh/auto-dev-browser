@@ -40,7 +40,7 @@ export default defineConfig({
     reportCompressedSize: isProduction,
     watch: watchOption,
     rollupOptions: {
-      external: ['chrome'],
+      external: ['chrome', 'virtual:reload-on-update-in-background-script', 'virtual:reload-on-update-in-view'],
     },
   },
   envDir: '../',
