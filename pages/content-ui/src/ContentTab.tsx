@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Tabs, Form, Input, Button, message, Space } from 'antd';
 import { RobotOutlined, ToolOutlined, SettingOutlined, PlayCircleOutlined, EditOutlined } from '@ant-design/icons';
+import type { eventWithTime } from 'rrweb';
+import { record } from 'rrweb';
+import { listenerHandler } from '@rrweb/types';
 
 // on close props
 export interface ContentTabProps {
@@ -10,35 +13,44 @@ export interface ContentTabProps {
 export default function ContentTab({ onClose }: ContentTabProps) {
   const [form] = Form.useForm();
   const [isCapturing, setIsCapturing] = useState(false);
-
-  const onFinish = (values: string) => {
-    console.log('Optimized test case:', values);
-    message.success('Test case optimized successfully!');
-  };
+  const [events, setEvents] = useState<eventWithTime[]>([]);
+  const [recordingFn, setRecordingFn] = useState<listenerHandler | undefined | null>(null);
 
   const startCapture = async () => {
     setIsCapturing(true);
     try {
-      // 模拟调用接口
-      const response = await fetch('https://api.example.com/start-capture', {
-        method: 'POST',
+      const stopFn = record({
+        emit(event) {
+          setEvents(prevEvents => [...prevEvents, event]);
+        },
       });
-      const data = await response.json();
+      setRecordingFn(stopFn);
 
-      // 假设 API 返回捕获的步骤
-      const capturedSteps = data.steps.join('\n');
-
-      // 将捕获的步骤添加到现有的 Test Steps 中
-      const currentSteps = form.getFieldValue('testSteps') || '';
-      const updatedSteps = currentSteps ? `${currentSteps}\n${capturedSteps}` : capturedSteps;
-
-      form.setFieldsValue({ testSteps: updatedSteps });
-      message.success('Capture completed and steps added!');
+      // // 假设 API 返回捕获的步骤
+      // const capturedSteps = ""
+      //
+      // // 将捕获的步骤添加到现有的 Test Steps 中
+      // const currentSteps = form.getFieldValue('testSteps') || '';
+      // const updatedSteps = currentSteps ? `${currentSteps}\n${capturedSteps}` : capturedSteps;
+      //
+      // form.setFieldsValue({ testSteps: updatedSteps });
+      // message.success('Capture completed and steps added!');
     } catch (error) {
       console.error('Error during capture:', error);
       message.error('Failed to capture steps. Please try again.');
     } finally {
       setIsCapturing(false);
+    }
+  };
+
+  const onFinish = () => {
+    // load events set to form
+    form.setFieldsValue({ testSteps: JSON.stringify(events, null, 2) });
+    // clear events
+    setEvents([]);
+    // stop recording
+    if (recordingFn) {
+      setRecordingFn(null);
     }
   };
 
@@ -103,6 +115,7 @@ export default function ContentTab({ onClose }: ContentTabProps) {
               <Button
                 type="primary"
                 htmlType="submit"
+                onClick={onFinish}
                 icon={<EditOutlined />}
                 className="flex-1 bg-blue-500 hover:bg-blue-600 focus:bg-blue-600">
                 Optimize Steps
@@ -129,6 +142,7 @@ export default function ContentTab({ onClose }: ContentTabProps) {
     },
   ];
 
+  // eslint-disable-next-line jsx-a11y/no-static-element-interactions
   return (
     <div
       className="p-2 bg-gray-100 max-w-md mx-auto"
