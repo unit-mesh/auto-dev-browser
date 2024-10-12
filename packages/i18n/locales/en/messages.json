@@ -1,7 +1,7 @@
 {
   "extensionDescription": {
     "description": "Extension description",
-    "message": "AutoDev Browser is a chrome extension boilerplate"
+    "message": "AutoDev Browser is a chrome extension for AutoDev AI Assistant"
   },
   "extensionName": {
     "description": "Extension name",

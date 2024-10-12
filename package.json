@@ -1,7 +1,7 @@
 {
   "name": "autodev-chrome",
   "version": "0.1.0",
-  "description": "AutoDev browser is a chrome extension boilerplate",
+  "description": "AutoDev Browser is a chrome extension for AutoDev AI Assistant",
   "license": "MIT",
   "repository": {
     "type": "git",
