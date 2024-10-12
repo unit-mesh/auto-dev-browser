@@ -10,6 +10,7 @@ Roadmap:
     - Capture code and auto generate
     - Generate code base on webpage
     - Webview capture (Auto) for Testing ?
+    - AutoTest Web page
 - Knowledge Mining
 
 ## LICENSE
