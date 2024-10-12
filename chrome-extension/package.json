@@ -1,7 +1,7 @@
 {
   "name": "chrome-extension",
-  "version": "0.3.3",
-  "description": "chrome extension - core settings",
+  "version": "0.0.1",
+  "description": "AutoDev Browser is a chrome extension for AutoDev AI Assistant",
   "type": "module",
   "scripts": {
     "clean:node_modules": "pnpx rimraf node_modules",
