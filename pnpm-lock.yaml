@@ -561,8 +561,8 @@ importers:
         specifier: ^9.1.2
         version: 9.1.2
       '@wdio/spec-reporter':
-        specifier: ^9.1.2
-        version: 9.1.2
+        specifier: ^9.1.3
+        version: 9.1.3
       '@wdio/types':
         specifier: ^9.1.3
         version: 9.1.3
@@ -1806,9 +1806,6 @@ packages:
   '@types/node@20.16.10':
     resolution: {integrity: sha512-vQUKgWTjEIRFCvK6CyriPH3MZYiYlNy0fKiEYHWbcoWLEgs4opurGGKlebrTLqdSMIbXImH6XExNiIyNUv3WpA==}
 
-  '@types/node@22.7.4':
-    resolution: {integrity: sha512-y+NPi1rFzDs1NdQHHToqeiX2TIS79SWEAw9GYhkkx8bD0ChpfqC+n2j5OXOCpzfojBEBt6DnEnnG9MY0zk1XLg==}
-
   '@types/node@22.7.5':
     resolution: {integrity: sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==}
 
@@ -1957,6 +1954,10 @@ packages:
     resolution: {integrity: sha512-1Rfg9VCy87I9IrViA1ned1Rqa66JwhCzdEo8rA8T3Ro6lBfOEwDbK1XW8ETKLWcweddzGeFalfVnvUlNgPmFdA==}
     engines: {node: '>=18.20.0'}
 
+  '@wdio/logger@9.1.3':
+    resolution: {integrity: sha512-cumRMK/gE1uedBUw3WmWXOQ7HtB6DR8EyKQioUz2P0IJtRRpglMBdZV7Svr3b++WWawOuzZHMfbTkJQmaVt8Gw==}
+    engines: {node: '>=18.20.0'}
+
   '@wdio/mocha-framework@9.1.2':
     resolution: {integrity: sha512-LG8arSVsSNqV61LvyQddmtDuqjeh+mVWhNPSCUi4AjZ2mBC85DTMBbvsIBSDK59DF9Ijd4NLDpRGnPzzgXjbIA==}
     engines: {node: '>=18.20.0'}
@@ -1968,16 +1969,16 @@ packages:
     resolution: {integrity: sha512-3iubjl4JX5zD21aFxZwQghqC3lgu+mSs8c3NaiYYNCC+IT5cI/8QuKlgh9s59bu+N3gG988jqMJeCYlKuUv/iw==}
     engines: {node: '>=18.20.0'}
 
-  '@wdio/reporter@9.1.2':
-    resolution: {integrity: sha512-Wn7yCtVLyfHwYTw5EWMeRTJp5sqM5SNKb/ZWiUeBM9sFJTcLyXISB+qtA5HVrB5MqqWIsgWBhBJmPl3fJqqJAg==}
+  '@wdio/reporter@9.1.3':
+    resolution: {integrity: sha512-j8i2Rs2JkcLdvdP6eysMNKgUnApi/ESwRYtscQvQIOYvzy2xOEJRe6VOeoUjLgKNN4VGo165H04bbxMR0oacUw==}
     engines: {node: '>=18.20.0'}
 
   '@wdio/runner@9.1.2':
     resolution: {integrity: sha512-Hs/sPEzm1y9BehdQzK9vS6t6PS07gcigM42lfZSmai4xIAXDB0VZCvwWAZuq0okx2EcBTb9bIfPtx/6zqAoiXg==}
     engines: {node: '>=18.20.0'}
 
-  '@wdio/spec-reporter@9.1.2':
-    resolution: {integrity: sha512-xuSCEQmLmLR3cEOQu6VU162AL1o4fgxb3vL5J7LsUXdhkgRPUL712oIAVpc0tJVDlIouv3PFtwwup5fi9/F6pA==}
+  '@wdio/spec-reporter@9.1.3':
+    resolution: {integrity: sha512-N5GsZpDcjfJ9otmxD8q1Kc7PK5/P4Y3B+Aj51FyvYseMPbsOzUuwsKUQJSQu/IhgrDU3UjZQydr8UBU/Gg6a9w==}
     engines: {node: '>=18.20.0'}
 
   '@wdio/types@9.1.2':
@@ -6074,7 +6075,7 @@ snapshots:
       '@inquirer/figures': 1.0.6
       '@inquirer/type': 2.0.0
       '@types/mute-stream': 0.0.4
-      '@types/node': 22.7.4
+      '@types/node': 22.7.5
       '@types/wrap-ansi': 3.0.0
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -6174,7 +6175,7 @@ snapshots:
       '@jest/schemas': 29.6.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 20.16.10
+      '@types/node': 22.7.5
       '@types/yargs': 17.0.33
       chalk: 4.1.2
 
@@ -6677,11 +6678,11 @@ snapshots:
 
   '@types/mute-stream@0.0.4':
     dependencies:
-      '@types/node': 20.16.10
+      '@types/node': 22.7.5
 
   '@types/node-fetch@2.6.11':
     dependencies:
-      '@types/node': 20.16.10
+      '@types/node': 22.7.5
       form-data: 4.0.0
 
   '@types/node@18.19.55':
@@ -6689,10 +6690,6 @@ snapshots:
       undici-types: 5.26.5
 
   '@types/node@20.16.10':
-    dependencies:
-      undici-types: 6.19.8
-
-  '@types/node@22.7.4':
     dependencies:
       undici-types: 6.19.8
 
@@ -6739,7 +6736,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 20.16.10
+      '@types/node': 22.7.5
     optional: true
 
   '@typescript-eslint/eslint-plugin@7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.6.3))(eslint@8.57.0)(typescript@5.6.3)':
@@ -6934,6 +6931,13 @@ snapshots:
       loglevel-plugin-prefix: 0.8.4
       strip-ansi: 7.1.0
 
+  '@wdio/logger@9.1.3':
+    dependencies:
+      chalk: 5.3.0
+      loglevel: 1.9.2
+      loglevel-plugin-prefix: 0.8.4
+      strip-ansi: 7.1.0
+
   '@wdio/mocha-framework@9.1.2':
     dependencies:
       '@types/mocha': 10.0.7
@@ -6951,11 +6955,11 @@ snapshots:
     dependencies:
       '@types/node': 20.16.10
 
-  '@wdio/reporter@9.1.2':
+  '@wdio/reporter@9.1.3':
     dependencies:
       '@types/node': 20.16.10
-      '@wdio/logger': 9.1.0
-      '@wdio/types': 9.1.2
+      '@wdio/logger': 9.1.3
+      '@wdio/types': 9.1.3
       diff: 7.0.0
       object-inspect: 1.13.2
 
@@ -6978,10 +6982,10 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@wdio/spec-reporter@9.1.2':
+  '@wdio/spec-reporter@9.1.3':
     dependencies:
-      '@wdio/reporter': 9.1.2
-      '@wdio/types': 9.1.2
+      '@wdio/reporter': 9.1.3
+      '@wdio/types': 9.1.3
       chalk: 5.3.0
       easy-table: 1.2.0
       pretty-ms: 9.1.0
@@ -9050,7 +9054,7 @@ snapshots:
   jest-util@29.7.0:
     dependencies:
       '@jest/types': 29.6.3
-      '@types/node': 20.16.10
+      '@types/node': 22.7.5
       chalk: 4.1.2
       ci-info: 3.9.0
       graceful-fs: 4.2.11
