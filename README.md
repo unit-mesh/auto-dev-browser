@@ -6,16 +6,6 @@
 
 Firefox: https://addons.mozilla.org/addon/autodev/
 
-Roadmap:
-
-- AI Editor for Elements
-- AI assistant development ? with code context ?
-    - Capture code and auto generate
-    - Generate code base on webpage
-    - Webview capture (Auto) for Testing ?
-    - AutoTest Web page
-- Knowledge Mining
-
 ## LICENSE
 
 AutoDev Browser is licensed under the `MIT` license as defined in [LICENSE](./LICENSE).
