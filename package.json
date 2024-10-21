@@ -53,7 +53,7 @@
   "devDependencies": {
     "@types/chrome": "^0.0.270",
     "@types/node": "^22.7.5",
-    "@types/react": "^18.3.3",
+    "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
