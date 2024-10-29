@@ -33,8 +33,8 @@ importers:
         specifier: ^1.22.2
         version: 1.22.2
       '@shikijs/monaco':
-        specifier: ^1.15.1
-        version: 1.22.0
+        specifier: ^1.22.2
+        version: 1.22.2
       eslint-plugin-tailwindcss:
         specifier: ^3.17.4
         version: 3.17.4(tailwindcss@3.4.13(ts-node@10.9.2(@swc/core@1.7.26)(@types/node@22.7.5)(typescript@5.6.3)))
@@ -1639,8 +1639,8 @@ packages:
   '@shikijs/engine-oniguruma@1.22.2':
     resolution: {integrity: sha512-GIZPAGzQOy56mGvWMoZRPggn0dTlBf1gutV5TdceLCZlFNqWmuc7u+CzD0Gd9vQUTgLbrt0KLzz6FNprqYAxlA==}
 
-  '@shikijs/monaco@1.22.0':
-    resolution: {integrity: sha512-E2FiNB1Od+uM3ESdmraFnThwUl1uz45rw6mONivcYHXgWO9E1t8UjjmE5ypkKUUKa0MlrpqAZEvyZRKh+9d7vg==}
+  '@shikijs/monaco@1.22.2':
+    resolution: {integrity: sha512-B4uAlNLUC1C57PGbhYjKVfRwRuh1hmj0/dOZt0IbdH3xjkF/kA99fcXOe9ODtDX2W7s+hef9h4pYT2ZAAAhMwQ==}
 
   '@shikijs/types@1.22.0':
     resolution: {integrity: sha512-Fw/Nr7FGFhlQqHfxzZY8Cwtwk5E9nKDUgeLjZgt3UuhcM3yJR9xj3ZGNravZZok8XmEZMiYkSMTPlPkULB8nww==}
@@ -6580,10 +6580,10 @@ snapshots:
       '@shikijs/types': 1.22.2
       '@shikijs/vscode-textmate': 9.3.0
 
-  '@shikijs/monaco@1.22.0':
+  '@shikijs/monaco@1.22.2':
     dependencies:
-      '@shikijs/core': 1.22.0
-      '@shikijs/types': 1.22.0
+      '@shikijs/core': 1.22.2
+      '@shikijs/types': 1.22.2
       '@shikijs/vscode-textmate': 9.3.0
 
   '@shikijs/types@1.22.0':
