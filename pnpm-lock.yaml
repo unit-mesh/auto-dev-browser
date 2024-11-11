@@ -142,8 +142,8 @@ importers:
         specifier: 5.6.3
         version: 5.6.3
       vite:
-        specifier: 5.4.3
-        version: 5.4.3(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1)
+        specifier: 5.4.11
+        version: 5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1)
 
   chrome-extension:
     dependencies:
@@ -171,7 +171,7 @@ importers:
         version: link:../packages/vite-config
       '@laynezh/vite-plugin-lib-assets':
         specifier: ^0.5.23
-        version: 0.5.24(vite@5.4.3(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))
+        version: 0.5.24(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))
       '@types/ws':
         specifier: ^8.5.12
         version: 8.5.12
@@ -281,7 +281,7 @@ importers:
         version: link:../tsconfig
       '@vitejs/plugin-react-swc':
         specifier: ^3.7.1
-        version: 3.7.1(@swc/helpers@0.5.13)(vite@5.4.3(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))
+        version: 3.7.1(@swc/helpers@0.5.13)(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))
       deepmerge:
         specifier: ^4.3.1
         version: 4.3.1
@@ -5648,8 +5648,8 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
-  vite@5.4.3:
-    resolution: {integrity: sha512-IH+nl64eq9lJjFqU+/yrRnrHPVTlgy42/+IzbOdaFDVlyLgI/wDlf+FCobXLX1cT0X5+7LMyH1mIy2xJdLfo8Q==}
+  vite@5.4.11:
+    resolution: {integrity: sha512-c7jFQRklXua0mTzneGW9QVyxFjUgwcihC4bXEtujIo2ouWCe1Ajt/amn2PCxYnhYfd5k09JX3SB7OYWFKYqj8Q==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -6407,13 +6407,13 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@laynezh/vite-plugin-lib-assets@0.5.24(vite@5.4.3(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))':
+  '@laynezh/vite-plugin-lib-assets@0.5.24(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))':
     dependencies:
       escape-string-regexp: 4.0.0
       loader-utils: 3.3.1
       mrmime: 1.0.1
       semver: 7.6.3
-      vite: 5.4.3(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1)
+      vite: 5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1)
 
   '@monaco-editor/loader@1.4.0(monaco-editor@0.51.0)':
     dependencies:
@@ -7023,10 +7023,10 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react-swc@3.7.1(@swc/helpers@0.5.13)(vite@5.4.3(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))':
+  '@vitejs/plugin-react-swc@3.7.1(@swc/helpers@0.5.13)(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))':
     dependencies:
       '@swc/core': 1.7.26(@swc/helpers@0.5.13)
-      vite: 5.4.3(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1)
+      vite: 5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -11423,7 +11423,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@5.4.3(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1):
+  vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.47
