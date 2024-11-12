@@ -298,8 +298,8 @@ importers:
         specifier: ^0.8.2
         version: 0.8.2
       tsx:
-        specifier: ^4.19.1
-        version: 4.19.1
+        specifier: ^4.19.2
+        version: 4.19.2
 
   pages/content:
     dependencies:
@@ -423,7 +423,7 @@ importers:
         version: 7.0.3
       postcss-load-config:
         specifier: ^6.0.1
-        version: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.1)(yaml@2.5.1)
+        version: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.2)(yaml@2.5.1)
 
   pages/new-tab:
     dependencies:
@@ -454,7 +454,7 @@ importers:
         version: 7.0.3
       postcss-load-config:
         specifier: ^6.0.1
-        version: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.1)(yaml@2.5.1)
+        version: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.2)(yaml@2.5.1)
       sass:
         specifier: 1.80.3
         version: 1.80.3
@@ -485,7 +485,7 @@ importers:
         version: 7.0.3
       postcss-load-config:
         specifier: ^6.0.1
-        version: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.1)(yaml@2.5.1)
+        version: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.2)(yaml@2.5.1)
 
   pages/popup:
     dependencies:
@@ -516,7 +516,7 @@ importers:
         version: 7.0.3
       postcss-load-config:
         specifier: ^6.0.1
-        version: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.1)(yaml@2.5.1)
+        version: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.2)(yaml@2.5.1)
 
   pages/side-panel:
     dependencies:
@@ -541,7 +541,7 @@ importers:
         version: 7.0.3
       postcss-load-config:
         specifier: ^6.0.1
-        version: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.1)(yaml@2.5.1)
+        version: 6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.2)(yaml@2.5.1)
 
   tests/e2e:
     devDependencies:
@@ -567,8 +567,8 @@ importers:
         specifier: ^9.1.3
         version: 9.1.3
       tsx:
-        specifier: ^4.19.1
-        version: 4.19.1
+        specifier: ^4.19.2
+        version: 4.19.2
 
 packages:
 
@@ -5481,8 +5481,8 @@ packages:
   tslib@2.8.0:
     resolution: {integrity: sha512-jWVzBLplnCmoaTr13V9dYbiQ99wvZRd0vNWaDRg+aVYRcjDF3nDksxFDE/+fkXnKhpnUUkmx5pK/v8mCtLVqZA==}
 
-  tsx@4.19.1:
-    resolution: {integrity: sha512-0flMz1lh74BR4wOvBjuh9olbnwqCPc35OOlfyzHba0Dc+QNUeWX/Gq2YTbnwcWPO3BMd8fkzRVrHcsR+a7z7rA==}
+  tsx@4.19.2:
+    resolution: {integrity: sha512-pOUl6Vo2LUq/bSa8S5q7b91cgNSjctn9ugq/+Mvow99qW6x/UZYwzxy/3NmqoT66eHYfCVvFvACC58UBPFf28g==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -7064,7 +7064,7 @@ snapshots:
       lodash.union: 4.6.0
       read-pkg-up: 10.1.0
       recursive-readdir: 2.2.3
-      tsx: 4.19.1
+      tsx: 4.19.2
       webdriverio: 9.2.4
       yargs: 17.7.2
     transitivePeerDependencies:
@@ -9997,13 +9997,13 @@ snapshots:
       postcss: 8.4.47
       ts-node: 10.9.2(@swc/core@1.7.26(@swc/helpers@0.5.13))(@types/node@22.7.5)(typescript@5.6.3)
 
-  postcss-load-config@6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.1)(yaml@2.5.1):
+  postcss-load-config@6.0.1(jiti@1.21.6)(postcss@8.4.47)(tsx@4.19.2)(yaml@2.5.1):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
       jiti: 1.21.6
       postcss: 8.4.47
-      tsx: 4.19.1
+      tsx: 4.19.2
       yaml: 2.5.1
 
   postcss-merge-longhand@5.1.7(postcss@8.4.47):
@@ -11256,7 +11256,7 @@ snapshots:
 
   tslib@2.8.0: {}
 
-  tsx@4.19.1:
+  tsx@4.19.2:
     dependencies:
       esbuild: 0.23.1
       get-tsconfig: 4.8.0
