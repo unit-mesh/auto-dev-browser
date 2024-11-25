@@ -170,8 +170,8 @@ importers:
         specifier: workspace:*
         version: link:../packages/vite-config
       '@laynezh/vite-plugin-lib-assets':
-        specifier: ^0.5.23
-        version: 0.5.24(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))
+        specifier: ^0.5.26
+        version: 0.5.26(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))
       '@types/ws':
         specifier: ^8.5.12
         version: 8.5.12
@@ -1363,8 +1363,8 @@ packages:
     resolution: {integrity: sha512-Pu8+WfJojCgSf0bAsXb4AjqvcDyAWyoEB1AoCRNACgEnBWZuitz3hLwCo9I+6hAbeg3QJ37g82yKcmvKAg1feg==}
     engines: {node: '>=18'}
 
-  '@laynezh/vite-plugin-lib-assets@0.5.24':
-    resolution: {integrity: sha512-z1M8reWte/xP7xw+aFN0Euh9OinCjCzJ8HhLkvpz+6h6MSTyyA54xrxGmECx5QNd3bCwQlkGd7WAgkozjublCg==}
+  '@laynezh/vite-plugin-lib-assets@0.5.26':
+    resolution: {integrity: sha512-WObL2hZZyAYHQXOzGs7TyWKJUrIOF9IABEaiwtwIY08/repd14dLfig11LV4EKSIEkfQpITSQoWsjuyhrkldpw==}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0
 
@@ -6435,7 +6435,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@laynezh/vite-plugin-lib-assets@0.5.24(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))':
+  '@laynezh/vite-plugin-lib-assets@0.5.26(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))':
     dependencies:
       escape-string-regexp: 4.0.0
       loader-utils: 3.3.1
