@@ -48,8 +48,8 @@ importers:
         specifier: ^0.51.0
         version: 0.51.0
       monaco-editor-core:
-        specifier: ^0.51.0
-        version: 0.51.0
+        specifier: ^0.52.2
+        version: 0.52.2
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -4041,8 +4041,8 @@ packages:
     engines: {node: '>= 14.0.0'}
     hasBin: true
 
-  monaco-editor-core@0.51.0:
-    resolution: {integrity: sha512-wNWSPfvQirGt2vxn9DzlwnXURPH20kyND60UZXD+Vk9x7+QbUpV5Cc1J5ojlSq3lxu1dEIMpG5gbL7oPJSCRWw==}
+  monaco-editor-core@0.52.2:
+    resolution: {integrity: sha512-5TOyTUymNx7jB24TGP4Qs5UEVrntDKSMzDUvW3ADaI1CFRO1t7FPhbT2u4m3iIKZf85zTM+mkCxiUSgj+v/YtA==}
 
   monaco-editor@0.51.0:
     resolution: {integrity: sha512-xaGwVV1fq343cM7aOYB6lVE4Ugf0UyimdD/x5PWcWBMKENwectaEu77FAN7c5sFiyumqeJdX1RPTh1ocioyDjw==}
@@ -9693,7 +9693,7 @@ snapshots:
       yargs-parser: 20.2.9
       yargs-unparser: 2.0.0
 
-  monaco-editor-core@0.51.0: {}
+  monaco-editor-core@0.52.2: {}
 
   monaco-editor@0.51.0: {}
 
