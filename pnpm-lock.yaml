@@ -558,8 +558,8 @@ importers:
         specifier: ^9.1.2
         version: 9.1.2
       '@wdio/mocha-framework':
-        specifier: ^9.1.3
-        version: 9.1.3
+        specifier: ^9.4.4
+        version: 9.4.4
       '@wdio/spec-reporter':
         specifier: ^9.1.3
         version: 9.1.3
@@ -2031,8 +2031,12 @@ packages:
     resolution: {integrity: sha512-cumRMK/gE1uedBUw3WmWXOQ7HtB6DR8EyKQioUz2P0IJtRRpglMBdZV7Svr3b++WWawOuzZHMfbTkJQmaVt8Gw==}
     engines: {node: '>=18.20.0'}
 
-  '@wdio/mocha-framework@9.1.3':
-    resolution: {integrity: sha512-MhYTwqZdpqu28vUFnU0swbv9Y/cKRGFdaJtBImpT0HlnbBHG3NouEcQnInSiGst5JMdDBRrkxHYZyTz6y3Uxpw==}
+  '@wdio/logger@9.4.4':
+    resolution: {integrity: sha512-BXx8RXFUW2M4dcO6t5Le95Hi2ZkTQBRsvBQqLekT2rZ6Xmw8ZKZBPf0FptnoftFGg6dYmwnDidYv/0+4PiHjpQ==}
+    engines: {node: '>=18.20.0'}
+
+  '@wdio/mocha-framework@9.4.4':
+    resolution: {integrity: sha512-GYBSndFT3v/+EVpyZjetCrJStWIugLZKgMdPiLZB3wMX9MsTPpMP2MDyO365kYXkvU4kYNWAwFSSwL6xMFaP+w==}
     engines: {node: '>=18.20.0'}
 
   '@wdio/protocols@9.0.8':
@@ -2069,16 +2073,20 @@ packages:
     resolution: {integrity: sha512-nHZ9Ne9iRQFJ1TOYKUn4Fza69IshTTzk6RYmSZ51ImGs9uMZu0+S0Jm9REdly+VLN3FzxG6g2QSe0/F3uNVPdw==}
     engines: {node: '>=18.20.0'}
 
+  '@wdio/types@9.4.4':
+    resolution: {integrity: sha512-Z2TAVMZiz4wCfP7ZdHqUXlYfF4qj5bBOV25A7tHxFbbdWPvFb8sSW3SU2+fxSwu02n5sV1mgfRYOsloypOXBnw==}
+    engines: {node: '>=18.20.0'}
+
   '@wdio/utils@9.1.2':
     resolution: {integrity: sha512-8APCnvJjHkG/6KwXtrPhEYR29Ph+vs1Gx2mGRnbYXNgbworfPEIZETpienHXhDEbINdqSb7EY5LkapIjP7nKbg==}
     engines: {node: '>=18.20.0'}
 
-  '@wdio/utils@9.1.3':
-    resolution: {integrity: sha512-dYeOzq9MTh8jYRZhzo/DYyn+cKrhw7h0/5hgyXkbyk/wHwF/uLjhATPmfaCr9+MARSEdiF7wwU8iRy/V0jfsLg==}
-    engines: {node: '>=18.20.0'}
-
   '@wdio/utils@9.2.2':
     resolution: {integrity: sha512-Npx7jL8eXGnBTMN+X+PLcXRfTezgVhcgwCJaarOQ0kSsyP6HNJuV8EqQZFpixzIZ1oRlizZ+cshaiwn01mgVHg==}
+    engines: {node: '>=18.20.0'}
+
+  '@wdio/utils@9.4.4':
+    resolution: {integrity: sha512-CH2uHziYKZrm6xvI2Drfha+CBAK3cCHTFqhxfjP2dhz5kcCQfCEn22Bj12t2jYTILNvnxKFCxZyk+VEcQNMIKg==}
     engines: {node: '>=18.20.0'}
 
   '@webassemblyjs/ast@1.12.1':
@@ -2137,6 +2145,10 @@ packages:
 
   '@zip.js/zip.js@2.7.52':
     resolution: {integrity: sha512-+5g7FQswvrCHwYKNMd/KFxZSObctLSsQOgqBSi0LzwHo3li9Eh1w5cF5ndjQw9Zbr3ajVnd2+XyiX85gAetx1Q==}
+    engines: {bun: '>=0.7.0', deno: '>=1.0.0', node: '>=16.5.0'}
+
+  '@zip.js/zip.js@2.7.54':
+    resolution: {integrity: sha512-qMrJVg2hoEsZJjMJez9yI2+nZlBUxgYzGV3mqcb2B/6T1ihXp0fWBDYlVHlHquuorgNUQP5a8qSmX6HF5rFJNg==}
     engines: {bun: '>=0.7.0', deno: '>=1.0.0', node: '>=16.5.0'}
 
   abort-controller@3.0.0:
@@ -2839,6 +2851,11 @@ packages:
     resolution: {integrity: sha512-3Ve9cd5ziLByUdigw6zovVeWJjVs8QHVmqOB0sJ0WNeVPcwf4p18GnxMmVvlFmYRloUwf5suNuorea4QzwBIOA==}
     hasBin: true
 
+  edgedriver@6.1.1:
+    resolution: {integrity: sha512-/dM/PoBf22Xg3yypMWkmRQrBKEnSyNaZ7wHGCT9+qqT14izwtFT+QvdR89rjNkMfXwW+bSFoqOfbcvM+2Cyc7w==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
+
   ejs@3.1.10:
     resolution: {integrity: sha512-UeJmFfOrAQS8OJWPZ4qtgHyWExa088/MtK5UEyoJGFH67cDEXkZSviOiKRCZ4Xij0zxI3JECgYs3oKx+AizQBA==}
     engines: {node: '>=0.10.0'}
@@ -3267,6 +3284,11 @@ packages:
   geckodriver@4.5.0:
     resolution: {integrity: sha512-EnBCT9kJ5oEoP3DaJKjzxAhm7bbNNK6k2q7oCkCT58OIOOiE6Hsr+nVDHflsNaR68HMGtBKOLSZ+YvCDHecScw==}
     engines: {node: ^16.13 || >=18 || >=20}
+    hasBin: true
+
+  geckodriver@5.0.0:
+    resolution: {integrity: sha512-vn7TtQ3b9VMJtVXsyWtQQl1fyBVFhQy7UvJF96kPuuJ0or5THH496AD3eUyaDD11+EqCxH9t6V+EP9soZQk4YQ==}
+    engines: {node: '>=18.0.0'}
     hasBin: true
 
   generic-names@4.0.0:
@@ -5064,6 +5086,10 @@ packages:
   safaridriver@0.1.2:
     resolution: {integrity: sha512-4R309+gWflJktzPXBQCobbWEHlzC4aK3a+Ov3tz2Ib2aBxiwd11phkdIBH1l0EO22x24CJMUQkpKFumRriCSRg==}
 
+  safaridriver@1.0.0:
+    resolution: {integrity: sha512-J92IFbskyo7OYB3Dt4aTdyhag1GlInrfbPCmMteb7aBK7PwlnGz1HI0+oyNN97j7pV9DqUAVoVgkNRMrfY47mQ==}
+    engines: {node: '>=18.0.0'}
+
   safe-array-concat@1.1.2:
     resolution: {integrity: sha512-vj6RsCsWBCf19jIeHEfkRMw8DPiBb+DMXklQ/1SGDHOMlHdPUkZXFQ2YdplS23zESTijAcurb1aSgJA3AgMu1Q==}
     engines: {node: '>=0.4'}
@@ -5791,6 +5817,11 @@ packages:
   which@4.0.0:
     resolution: {integrity: sha512-GlaYyEb07DPxYCKhKzplCWBJtvxZcZMrL+4UkrTSJHHPyZU4mYYTv3qaOe77H7EODLSSopAUFAc6W8U4yqvscg==}
     engines: {node: ^16.13.0 || >=18.0.0}
+    hasBin: true
+
+  which@5.0.0:
+    resolution: {integrity: sha512-JEdGzHwwkrbWoGOlIHqQ5gtprKGOenpDHpxE9zVR1bWbOtYRyPPHMe9FaP6x61CmNaTThSkb0DAJte5jD+DmzQ==}
+    engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
 
   word-wrap@1.2.5:
@@ -7184,13 +7215,20 @@ snapshots:
       loglevel-plugin-prefix: 0.8.4
       strip-ansi: 7.1.0
 
-  '@wdio/mocha-framework@9.1.3':
+  '@wdio/logger@9.4.4':
+    dependencies:
+      chalk: 5.3.0
+      loglevel: 1.9.2
+      loglevel-plugin-prefix: 0.8.4
+      strip-ansi: 7.1.0
+
+  '@wdio/mocha-framework@9.4.4':
     dependencies:
       '@types/mocha': 10.0.7
       '@types/node': 20.16.10
-      '@wdio/logger': 9.1.3
-      '@wdio/types': 9.1.3
-      '@wdio/utils': 9.1.3
+      '@wdio/logger': 9.4.4
+      '@wdio/types': 9.4.4
+      '@wdio/utils': 9.4.4
       mocha: 10.7.3
     transitivePeerDependencies:
       - supports-color
@@ -7250,29 +7288,15 @@ snapshots:
     dependencies:
       '@types/node': 20.16.10
 
+  '@wdio/types@9.4.4':
+    dependencies:
+      '@types/node': 20.16.10
+
   '@wdio/utils@9.1.2':
     dependencies:
       '@puppeteer/browsers': 2.4.0
       '@wdio/logger': 9.1.0
       '@wdio/types': 9.1.2
-      decamelize: 6.0.0
-      deepmerge-ts: 7.1.1
-      edgedriver: 5.6.1
-      geckodriver: 4.5.0
-      get-port: 7.1.0
-      import-meta-resolve: 4.1.0
-      locate-app: 2.4.43
-      safaridriver: 0.1.2
-      split2: 4.2.0
-      wait-port: 1.1.0
-    transitivePeerDependencies:
-      - supports-color
-
-  '@wdio/utils@9.1.3':
-    dependencies:
-      '@puppeteer/browsers': 2.4.0
-      '@wdio/logger': 9.1.3
-      '@wdio/types': 9.1.3
       decamelize: 6.0.0
       deepmerge-ts: 7.1.1
       edgedriver: 5.6.1
@@ -7299,6 +7323,24 @@ snapshots:
       import-meta-resolve: 4.1.0
       locate-app: 2.4.43
       safaridriver: 0.1.2
+      split2: 4.2.0
+      wait-port: 1.1.0
+    transitivePeerDependencies:
+      - supports-color
+
+  '@wdio/utils@9.4.4':
+    dependencies:
+      '@puppeteer/browsers': 2.4.0
+      '@wdio/logger': 9.4.4
+      '@wdio/types': 9.4.4
+      decamelize: 6.0.0
+      deepmerge-ts: 7.1.1
+      edgedriver: 6.1.1
+      geckodriver: 5.0.0
+      get-port: 7.1.0
+      import-meta-resolve: 4.1.0
+      locate-app: 2.4.43
+      safaridriver: 1.0.0
       split2: 4.2.0
       wait-port: 1.1.0
     transitivePeerDependencies:
@@ -7387,6 +7429,8 @@ snapshots:
   '@xtuc/long@4.2.2': {}
 
   '@zip.js/zip.js@2.7.52': {}
+
+  '@zip.js/zip.js@2.7.54': {}
 
   abort-controller@3.0.0:
     dependencies:
@@ -8216,6 +8260,20 @@ snapshots:
       node-fetch: 3.3.2
       which: 4.0.0
 
+  edgedriver@6.1.1:
+    dependencies:
+      '@wdio/logger': 9.4.4
+      '@zip.js/zip.js': 2.7.54
+      decamelize: 6.0.0
+      edge-paths: 3.0.5
+      fast-xml-parser: 4.5.0
+      http-proxy-agent: 7.0.2
+      https-proxy-agent: 7.0.5
+      node-fetch: 3.3.2
+      which: 5.0.0
+    transitivePeerDependencies:
+      - supports-color
+
   ejs@3.1.10:
     dependencies:
       jake: 10.9.2
@@ -8849,7 +8907,7 @@ snapshots:
 
   geckodriver@4.5.0:
     dependencies:
-      '@wdio/logger': 9.1.3
+      '@wdio/logger': 9.4.4
       '@zip.js/zip.js': 2.7.52
       decamelize: 6.0.0
       http-proxy-agent: 7.0.2
@@ -8857,6 +8915,19 @@ snapshots:
       node-fetch: 3.3.2
       tar-fs: 3.0.6
       which: 4.0.0
+    transitivePeerDependencies:
+      - supports-color
+
+  geckodriver@5.0.0:
+    dependencies:
+      '@wdio/logger': 9.4.4
+      '@zip.js/zip.js': 2.7.54
+      decamelize: 6.0.0
+      http-proxy-agent: 7.0.2
+      https-proxy-agent: 7.0.5
+      node-fetch: 3.3.2
+      tar-fs: 3.0.6
+      which: 5.0.0
     transitivePeerDependencies:
       - supports-color
 
@@ -10805,6 +10876,8 @@ snapshots:
 
   safaridriver@0.1.2: {}
 
+  safaridriver@1.0.0: {}
+
   safe-array-concat@1.1.2:
     dependencies:
       call-bind: 1.0.7
@@ -11685,6 +11758,10 @@ snapshots:
       isexe: 2.0.0
 
   which@4.0.0:
+    dependencies:
+      isexe: 3.1.1
+
+  which@5.0.0:
     dependencies:
       isexe: 3.1.1
 
