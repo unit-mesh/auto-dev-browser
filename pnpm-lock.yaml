@@ -19,13 +19,13 @@ importers:
         version: 2.2.5
       '@langchain/community':
         specifier: ^0.0.32
-        version: 0.0.32(lodash@4.17.21)(openai@4.67.3(zod@3.23.8))(ws@8.18.0)
+        version: 0.0.32(lodash@4.17.21)(openai@4.77.0(zod@3.23.8))(ws@8.18.0)
       '@langchain/core':
         specifier: ^0.3.18
-        version: 0.3.18(openai@4.67.3(zod@3.23.8))
+        version: 0.3.18(openai@4.77.0(zod@3.23.8))
       '@langchain/openai':
-        specifier: ^0.2.11
-        version: 0.2.11
+        specifier: ^0.3.16
+        version: 0.3.16(@langchain/core@0.3.18(openai@4.77.0(zod@3.23.8)))
       '@monaco-editor/react':
         specifier: ^4.6.0
         version: 4.6.0(monaco-editor@0.51.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1497,10 +1497,6 @@ packages:
     resolution: {integrity: sha512-+fjyYi8wy6x1P+Ee1RWfIIEyxd9Ee9jksEwvrggPwwI/p45kIDTdYTblXsM13y4mNWTiACyLSdbwnPaxxdoz+w==}
     engines: {node: '>=18'}
 
-  '@langchain/core@0.2.36':
-    resolution: {integrity: sha512-qHLvScqERDeH7y2cLuJaSAlMwg3f/3Oc9nayRSXRU2UuaK/SOhI42cxiPLj1FnuHJSmN0rBQFkrLx02gI4mcVg==}
-    engines: {node: '>=18'}
-
   '@langchain/core@0.3.18':
     resolution: {integrity: sha512-IEZCrFs1Xd0J2FTH1D3Lnm3/Yk2r8LSpwDeLYwcCom3rNAK5k4mKQ2rwIpNq3YuqBdrTNMKRO+PopjkP1SB17A==}
     engines: {node: '>=18'}
@@ -1509,9 +1505,11 @@ packages:
     resolution: {integrity: sha512-co6nRylPrLGY/C3JYxhHt6cxLq07P086O7K3QaZH7SFFErIN9wSzJonpvhZR07DEUq6eK6wKgh2ORxA/NcjSRQ==}
     engines: {node: '>=18'}
 
-  '@langchain/openai@0.2.11':
-    resolution: {integrity: sha512-Pu8+WfJojCgSf0bAsXb4AjqvcDyAWyoEB1AoCRNACgEnBWZuitz3hLwCo9I+6hAbeg3QJ37g82yKcmvKAg1feg==}
+  '@langchain/openai@0.3.16':
+    resolution: {integrity: sha512-Om9HRlTeI0Ou6D4pfxbWHop4WGfkCdV/7v1W/+Jr7NSf0BNoA9jk5GqGms8ZtOYSGgPvizDu3i0TrM3B4cN4NA==}
     engines: {node: '>=18'}
+    peerDependencies:
+      '@langchain/core': '>=0.2.26 <0.4.0'
 
   '@laynezh/vite-plugin-lib-assets@0.5.24':
     resolution: {integrity: sha512-z1M8reWte/xP7xw+aFN0Euh9OinCjCzJ8HhLkvpz+6h6MSTyyA54xrxGmECx5QNd3bCwQlkGd7WAgkozjublCg==}
@@ -4352,6 +4350,15 @@ packages:
       zod:
         optional: true
 
+  openai@4.77.0:
+    resolution: {integrity: sha512-WWacavtns/7pCUkOWvQIjyOfcdr9X+9n9Vvb0zFeKVDAqwCMDHB+iSr24SVaBAhplvSG6JrRXFpcNM9gWhOGIw==}
+    hasBin: true
+    peerDependencies:
+      zod: ^3.23.8
+    peerDependenciesMeta:
+      zod:
+        optional: true
+
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
     engines: {node: '>= 0.8.0'}
@@ -6581,12 +6588,12 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@langchain/community@0.0.32(lodash@4.17.21)(openai@4.67.3(zod@3.23.8))(ws@8.18.0)':
+  '@langchain/community@0.0.32(lodash@4.17.21)(openai@4.77.0(zod@3.23.8))(ws@8.18.0)':
     dependencies:
-      '@langchain/core': 0.1.63(openai@4.67.3(zod@3.23.8))
+      '@langchain/core': 0.1.63(openai@4.77.0(zod@3.23.8))
       '@langchain/openai': 0.0.14
       flat: 5.0.2
-      langsmith: 0.1.63(openai@4.67.3(zod@3.23.8))
+      langsmith: 0.1.63(openai@4.77.0(zod@3.23.8))
       uuid: 9.0.1
       zod: 3.23.8
     optionalDependencies:
@@ -6613,29 +6620,30 @@ snapshots:
     transitivePeerDependencies:
       - openai
 
-  '@langchain/core@0.2.36(openai@4.67.3(zod@3.23.8))':
+  '@langchain/core@0.1.63(openai@4.77.0(zod@3.23.8))':
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.15
-      langsmith: 0.1.63(openai@4.67.3(zod@3.23.8))
+      langsmith: 0.1.63(openai@4.77.0(zod@3.23.8))
+      ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
       p-retry: 4.6.2
-      uuid: 10.0.0
+      uuid: 9.0.1
       zod: 3.23.8
       zod-to-json-schema: 3.23.3(zod@3.23.8)
     transitivePeerDependencies:
       - openai
 
-  '@langchain/core@0.3.18(openai@4.67.3(zod@3.23.8))':
+  '@langchain/core@0.3.18(openai@4.77.0(zod@3.23.8))':
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.15
-      langsmith: 0.2.5(openai@4.67.3(zod@3.23.8))
+      langsmith: 0.2.5(openai@4.77.0(zod@3.23.8))
       mustache: 4.2.0
       p-queue: 6.6.2
       p-retry: 4.6.2
@@ -6655,11 +6663,11 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@langchain/openai@0.2.11':
+  '@langchain/openai@0.3.16(@langchain/core@0.3.18(openai@4.77.0(zod@3.23.8)))':
     dependencies:
-      '@langchain/core': 0.2.36(openai@4.67.3(zod@3.23.8))
+      '@langchain/core': 0.3.18(openai@4.77.0(zod@3.23.8))
       js-tiktoken: 1.0.15
-      openai: 4.67.3(zod@3.23.8)
+      openai: 4.77.0(zod@3.23.8)
       zod: 3.23.8
       zod-to-json-schema: 3.23.3(zod@3.23.8)
     transitivePeerDependencies:
@@ -9692,7 +9700,7 @@ snapshots:
     optionalDependencies:
       openai: 4.67.3(zod@3.23.8)
 
-  langsmith@0.2.5(openai@4.67.3(zod@3.23.8)):
+  langsmith@0.1.63(openai@4.77.0(zod@3.23.8)):
     dependencies:
       '@types/uuid': 10.0.0
       commander: 10.0.1
@@ -9701,7 +9709,18 @@ snapshots:
       semver: 7.6.3
       uuid: 10.0.0
     optionalDependencies:
-      openai: 4.67.3(zod@3.23.8)
+      openai: 4.77.0(zod@3.23.8)
+
+  langsmith@0.2.5(openai@4.77.0(zod@3.23.8)):
+    dependencies:
+      '@types/uuid': 10.0.0
+      commander: 10.0.1
+      p-queue: 6.6.2
+      p-retry: 4.6.2
+      semver: 7.6.3
+      uuid: 10.0.0
+    optionalDependencies:
+      openai: 4.77.0(zod@3.23.8)
 
   language-subtag-registry@0.3.23: {}
 
@@ -10079,6 +10098,20 @@ snapshots:
       regex: 4.3.3
 
   openai@4.67.3(zod@3.23.8):
+    dependencies:
+      '@types/node': 18.19.55
+      '@types/node-fetch': 2.6.11
+      abort-controller: 3.0.0
+      agentkeepalive: 4.5.0
+      form-data-encoder: 1.7.2
+      formdata-node: 4.4.1
+      node-fetch: 2.7.0
+    optionalDependencies:
+      zod: 3.23.8
+    transitivePeerDependencies:
+      - encoding
+
+  openai@4.77.0(zod@3.23.8):
     dependencies:
       '@types/node': 18.19.55
       '@types/node-fetch': 2.6.11
