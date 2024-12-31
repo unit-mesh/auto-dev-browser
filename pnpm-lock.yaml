@@ -170,8 +170,8 @@ importers:
         specifier: workspace:*
         version: link:../packages/vite-config
       '@laynezh/vite-plugin-lib-assets':
-        specifier: ^0.5.23
-        version: 0.5.24(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))
+        specifier: ^0.6.1
+        version: 0.6.1(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))
       '@types/ws':
         specifier: ^8.5.12
         version: 8.5.12
@@ -1511,10 +1511,10 @@ packages:
     peerDependencies:
       '@langchain/core': '>=0.2.26 <0.4.0'
 
-  '@laynezh/vite-plugin-lib-assets@0.5.24':
-    resolution: {integrity: sha512-z1M8reWte/xP7xw+aFN0Euh9OinCjCzJ8HhLkvpz+6h6MSTyyA54xrxGmECx5QNd3bCwQlkGd7WAgkozjublCg==}
+  '@laynezh/vite-plugin-lib-assets@0.6.1':
+    resolution: {integrity: sha512-pdIRW/PiJkuM7/OObjGBGfQmsWetmVObeez6uwT3nhP5cu2zT0L5QELq69caWD/v3QlPY3CPXVN0kZrzQzdvsQ==}
     peerDependencies:
-      vite: ^3.0.0 || ^4.0.0 || ^5.0.0
+      vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
 
   '@monaco-editor/loader@1.4.0':
     resolution: {integrity: sha512-00ioBig0x642hytVspPl7DbQyaSWRaolYie/UFNjoTdvoKPzo6xrXLhTk9ixgIKcLH5b5vDOjVNiGyY+uDCUlg==}
@@ -6673,7 +6673,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  '@laynezh/vite-plugin-lib-assets@0.5.24(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))':
+  '@laynezh/vite-plugin-lib-assets@0.6.1(vite@5.4.11(@types/node@22.7.5)(sass@1.80.3)(terser@5.34.1))':
     dependencies:
       escape-string-regexp: 4.0.0
       loader-utils: 3.3.1
