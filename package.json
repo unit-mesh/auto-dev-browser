@@ -41,7 +41,7 @@
     "@langchain/core": "^0.3.18",
     "@langchain/openai": "^0.3.16",
     "@monaco-editor/react": "^4.6.0",
-    "@shikijs/core": "^1.22.2",
+    "@shikijs/core": "^2.2.0",
     "@shikijs/monaco": "^1.22.2",
     "handlebars": "^4.7.8",
     "highlight.js": "^11.9.0",
